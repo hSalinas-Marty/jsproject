@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var logements = require('../data/logements.')
+var logements = require('../data/data-logements')
 
 /* GET home page. */
 router.get('/logements/:id', function(req, res) {
