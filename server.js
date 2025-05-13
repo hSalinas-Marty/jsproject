@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'airbnb', 'public')));
 
 // Route pour la page d'accueil
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'airbnb', 'views', 'index.html'));
+  res.sendFile(path.join(__dirname, 'airbnb', 'views', 'index.ejs'));
 });
 
 app.listen(port, () => {
