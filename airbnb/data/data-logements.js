@@ -39,4 +39,4 @@ const logements = [
 ]
 
 
-module.exports = router;
+module.exports = logements;
