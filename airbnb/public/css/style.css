@@ -1,0 +1,37 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #a51717;
+}
+
+h1 {
+  color: #ff5a5f;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+
+}
+.bloc{
+  display: block;
+  background-color: #eecaca;
+  border: solid black 1px;
+  border-radius: 5%;
+}
+.bloc-texte{
+  padding: 10px;
+}
+.bloc-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5% 5% 0 0;
+}
