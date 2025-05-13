@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
-var logements = require('../data/data-logements')
+let express = require('express');
+let router = express.Router();
+let logements = require('../data/logements')
 
 /* GET home page. */
-router.get('/logements/:id', function(req, res) {
+router.get('..data/logements/:id', function(req, res) {
   const id = parseInt(req.params.id) ;
   const logement = logements.find(l=>l.id === id) ;
   if (!logement){

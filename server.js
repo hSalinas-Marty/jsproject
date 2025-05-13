@@ -18,6 +18,18 @@ app.get('/', (req, res) => {
   res.render('index', { logements });
 });
 
+app.get('/logement/:id', (req, res) => {
+  const logementId = parseInt(req.params.id, 10); 
+  const logement = logements.find(l => l.id === logementId); 
+
+  if (!logement) {
+    return res.status(404).send('Logement non trouvé');
+  }
+
+  res.render('logement', { logement }); 
+});
+
+
 app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}`);
 });

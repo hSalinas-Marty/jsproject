@@ -7,7 +7,7 @@
     <title>Mon Site Airbnb</title>
 </head>
 <body>
-    <h1>Bienvenue sur mon site Airbnb</h1>
+    <h1>Bienvenue sur mon site TeddyBeer&Be</h1>
     <p>Test de style CSS</p>
     <section>
       <% logements.forEach(logement => { %>
@@ -18,9 +18,10 @@
             <div class="bloc-texte">
                     <h3><%= logement.titre %></h3>
                     <p><strong>Nombre de personnes :</strong> <%= logement.nombre_de_personnes %></p>
-                    <p><strong>Prix :</strong> <%= logement.prix %> € / nuit</p>
-                    <a href="/airbnb/data/logements.js">Voir les détails</a>
+                    <p><strong>Prix :</strong> <%= logement.prix %>  / nuit</p>
+                    <a href="/logement/<%= logement.id %>">Voir les détails</a>
                 </div>
+            </div>
       <% }) %>
     </section>
 </body>
