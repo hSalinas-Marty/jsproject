@@ -10,40 +10,18 @@
     <h1>Bienvenue sur mon site Airbnb</h1>
     <p>Test de style CSS</p>
     <section>
+      <% logements.forEach(logement => { %>
         <div class="bloc">
             <div class="bloc-img">
                 <img src="/img/trouver-un-logement-mdv.png.png" alt="test-image">
             </div>
             <div class="bloc-texte">
-                <h3>Logement 1</h3>
-                <p>caractéristique 1 : </p>
-                <p>caractéristique 2 : </p>
-                <p>caractéristique 3 : </p>
-            </div>
-            
-        </div>
-        <div class="bloc">
-            <div class="bloc-img">
-                <img src="/img/trouver-un-logement-mdv.png.png" alt="test-image">
-            </div>
-            <div class="bloc-texte">
-                <h3>Logement 2</h3>
-                <p>caractéristique 1 : </p>
-                <p>caractéristique 2 : </p>
-                <p>caractéristique 3 : </p>
-            </div>
-        </div>
-        <div class="bloc">
-            <div class="bloc-img">
-                <img src="/img/trouver-un-logement-mdv.png.png" alt="test-image">
-            </div>
-            <div class="bloc-texte">
-                <h3>Logement 3</h3>
-                <p>caractéristique 1 : </p>
-                <p>caractéristique 2 : </p>
-                <p>caractéristique 3 : </p>
-            </div>
-        </div>
+                    <h3><%= logement.titre %></h3>
+                    <p><strong>Description :</strong> <%= logement.description %></p>
+                    <p><strong>Prix :</strong> <%= logement.prix %> € / nuit</p>
+                    <a href="/airbnb/data/logements.js">Voir les détails</a>
+                </div>
+      <% }) %>
     </section>
 </body>
 </html>
