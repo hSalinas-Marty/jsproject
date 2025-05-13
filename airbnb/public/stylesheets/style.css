@@ -1,8 +1,55 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+.logements {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.logement {
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.logement img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.logement h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.logement p {
+  font-size: 16px;
+}
+
+.logement a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
 }
