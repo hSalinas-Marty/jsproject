@@ -6,7 +6,13 @@ const logements = [
     nombre_de_pièce: 3,
     nombre_de_lit: 2,
     lieu: "Calvi, Corse",
-    prix: "200€"
+    prix: "200€",
+    description: "Profitez du soleil corse dans cette villa moderne avec vue imprenable sur la mer. Parfaite pour des vacances en famille ou entre amis.",
+    images: [
+      "/img/logement-1-1.jpg",
+      "/img/logement-1-2.jpg",
+      "/img/logement-1-3.jpg"
+    ]
   },
   {
     id: 2,
@@ -15,7 +21,13 @@ const logements = [
     nombre_de_pièce: 2,
     nombre_de_lit: 1,
     lieu: "Saint-Tropez, France",
-    prix: "150€"
+    prix: "150€",
+    description: "Un petit cocon chaleureux au cœur de Saint-Tropez, idéal pour une escapade romantique en bord de mer.",
+    images: [
+      "/img/logement-2-1.jpg",
+      "/img/logement-2-2.jpg",
+      "/img/logement-2-3.jpg"
+    ]
   },
   {
     id: 3,
@@ -24,7 +36,13 @@ const logements = [
     nombre_de_pièce: 4,
     nombre_de_lit: 3,
     lieu: "Ile de Ré, France",
-    prix: "250€"
+    prix: "250€",
+    description: "Une grande maison lumineuse avec jardin, parfaite pour des vacances familiales à quelques pas des plages et du marché local.",
+    images: [
+      "/img/logement-3-1.jpg",
+      "/img/logement-3-2.jpg",
+      "/img/logement-3-3.jpg"
+    ]
   },
   {
     id: 4,
@@ -33,9 +51,14 @@ const logements = [
     nombre_de_pièce: 1,
     nombre_de_lit: 1,
     lieu: "La Rochelle, France",
-    prix: "100€"
+    prix: "100€",
+    description: "Un studio confortable et moderne situé à proximité du vieux port, idéal pour découvrir la ville à pied.",
+    images: [
+      "/img/logement-4-1.jpg",
+      "/img/logement-4-2.jpg",
+      "/img/logement-4-3.jpg"
+    ]
   },
-
   {
     id: 5,
     titre: "Chalet avec vue sur le Mont-Blanc",
@@ -43,7 +66,13 @@ const logements = [
     nombre_de_pièce: 3,
     nombre_de_lit: 3,
     lieu: "Chamonix, Alpes françaises",
-    prix: "180€"
+    prix: "180€",
+    description: "Un chalet montagnard chaleureux avec cheminée et vue panoramique sur le Mont-Blanc. Idéal pour les amoureux de la nature et du ski.",
+    images: [
+      "/img/logement-5-1.jpg",
+      "/img/logement-5-2.jpg",
+      "/img/logement-5-3.jpg"
+    ]
   }
 ];
 

@@ -51,7 +51,6 @@ body.logement-page {
   font-weight: bold;
   font-size: 18px;
   margin-top: 20px;
-  color: #e74c3c;
 }
 
 /* Retour button */
@@ -80,6 +79,9 @@ body {
   color: #ffffe6;
   background-color: #10100e;
 }
+
+
+/* Carousel */
 
 .carousel-container {
   width: 80%;
