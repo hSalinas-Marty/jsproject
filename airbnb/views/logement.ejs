@@ -5,21 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= logement.titre %> - Détails</title>
   <link rel="stylesheet" href="/css/logement.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <script>
+    window.logementData = <%- JSON.stringify(logement) %>;
+  </script>
 </head>
 <body class="logement-page">
 
   <div class="card">
     <main class="carousel-container">
-                <div class="carousel">
-                    <% logement.images.forEach((img, index) => { %>
-                    <div class="item <%= index === 0 ? 'active' : '' %>">
-                      <img src="<%= img %>" alt="Image <%= index + 1 %>" />
-                    </div>
-                  <% }) %>
-                <button class="btn prev">Prev</button>
-                <button class="btn next">Next</button>
-                <div class="dots"></div>
-                </main>
+      <div class="carousel">
+        <% logement.images.forEach((img, index) => { %>
+          <div class="item <%= index === 0 ? 'active' : '' %>">
+            <img src="<%= img %>" alt="Image <%= index + 1 %>" />
+          </div>
+        <% }) %>
+        <button class="btn prev">Prev</button>
+        <button class="btn next">Next</button>
+        <div class="dots"></div>
+      </div>
+    </main>
     <div class="card-content">
       <h1 class="logement-titre"><%= logement.titre %></h1>
       <p><strong>Lieu :</strong> <%= logement.lieu %></p>
@@ -28,11 +35,18 @@
       <p><strong>Nombre de pièces :</strong> <%= logement.nombre_de_pièce %></p>
       <p><strong>Nombre de lits :</strong> <%= logement.nombre_de_lit %></p>
       <p class="prix"><strong>Prix :</strong> <%= logement.prix %> / nuit</p>
-
+      <div id="map"></div>
       <a href="/" class="btn-retour">← Retour à l'accueil</a>
     </div>
   </div>
-<script src="/js/carrousel.js" defer></script>
 
+  <script src="/js/carrousel.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="/js/singleMap.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        initSingleMap(window.logementData);
+    });
+</script>
 </body>
 </html>

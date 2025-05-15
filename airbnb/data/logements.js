@@ -12,7 +12,9 @@ const logements = [
       "/img/logement-1-1.jpg",
       "/img/logement-1-2.jpg",
       "/img/logement-1-3.jpg"
-    ]
+    ],
+    latitude: 42.567708,
+    longitude: 8.759053
   },
   {
     id: 2,
@@ -27,7 +29,9 @@ const logements = [
       "/img/logement-2-1.jpg",
       "/img/logement-2-2.jpg",
       "/img/logement-2-3.jpg"
-    ]
+    ],
+    latitude: 43.272719,
+    longitude: 6.640523
   },
   {
     id: 3,
@@ -42,7 +46,9 @@ const logements = [
       "/img/logement-3-1.jpg",
       "/img/logement-3-2.jpg",
       "/img/logement-3-3.jpg"
-    ]
+    ],
+    latitude: 46.200538,
+    longitude: -1.40028
   },
   {
     id: 4,
@@ -57,7 +63,9 @@ const logements = [
       "/img/logement-4-1.jpg",
       "/img/logement-4-2.jpg",
       "/img/logement-4-3.jpg"
-    ]
+    ],
+    latitude: 46.159732,
+    longitude: -1.151595
   },
   {
     id: 5,
@@ -72,7 +80,9 @@ const logements = [
       "/img/logement-5-1.jpg",
       "/img/logement-5-2.jpg",
       "/img/logement-5-3.jpg"
-    ]
+    ],
+    latitude: 45.924671,
+    longitude: 6.872751
   }
 ];
 
